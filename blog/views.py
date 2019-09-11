@@ -1,4 +1,4 @@
-from django.http import HttpResponse
-# Create your views here.
-def hola(request):
-    return HttpResponse("Hola")
+from django.shortcuts import render
+
+def post_list(request):
+    return render(request, 'blog/post_list.html', {})
